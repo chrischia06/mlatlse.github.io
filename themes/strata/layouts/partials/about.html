@@ -1,0 +1,10 @@
+<section>
+	<img src = "images/main.jpg" id="mainimg">
+	<!-- <header class="major" id="thetitle">
+		<img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}" alt="logo" id="headlogo"/>	
+		{{ with .Site.Params.about.title }}<h2 id ='maintitle'>{{ . | markdownify }}</h2>{{ end }}
+	</header> -->
+	<hr>
+	{{ with .Site.Params.about.content }}<p>{{ . | markdownify }}</p>{{ end }}
+	
+</section>

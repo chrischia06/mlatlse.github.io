@@ -1,0 +1,9 @@
+<section>
+
+	{{ with .Site.Params.upcoming.title }}<h2 id >{{ . | markdownify }}</h2>{{ end }}
+	{{ range .Site.Params.upcoming.events }}
+		<ol>
+            <li> <a href="{{ .link }}"> {{ .date }} -  {{ .title }}</a>   </li>
+        </ol>
+	{{ end }}
+</section>

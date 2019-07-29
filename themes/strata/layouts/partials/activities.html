@@ -1,0 +1,16 @@
+{{ "<!-- portfolio -->" | safeHTML }}
+<section id="two">
+	{{ with .Site.Params.activities.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+	<div class="row" id ="activities">
+		{{ range .Site.Params.activities.activity }}
+				<span class ="aicon">
+					<!-- <i class = "fa fa-circle fa-stack-2x"></i> -->
+					<i class= "{{ .icon }}"> </i>
+				<h4> {{.name}}: </h4>
+			<p> {{ .description | markdownify }}</p>
+			</span>
+
+		{{ end }}
+		</ul>
+	</div>
+</section>

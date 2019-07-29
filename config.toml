@@ -1,0 +1,145 @@
+baseurl = "https://chrischia06.github.io/"
+title = "LSE SU Machine Learning Society"
+theme = "strata"
+disqusShortname = "spf13"
+# Enable Google Analytics by inserting your tracking code
+googleAnalytics = ""
+# Define how many posts should appear on a site
+paginate = 10
+
+[params]
+	# To provide some metadata for search engines feel free to add a few
+	# information about you and your website.
+	name = "ML@LSE"
+	description = "LSE SU Machine Learning Society Webpage"
+
+	# Format dates with Go's time formatting
+	date_format = "2006-01-02"
+
+	# Add read time estimates in the format "X min read"
+	show_read_time = false
+
+	# Add custom assets with their paths relative to the static folder
+	custom_js   = []
+	custom_css  = []
+
+
+	[params.sidebar]
+		# Replace the avatar with a picture of your own under static/images
+		avatar = "new_logo.png"
+		avatar2 = "new_logo2.png"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = "LSE SU Machine Learning Society"
+		# The icons will be shown if you enter your username
+		github = "mlatlse"
+		facebook = "mlatlse"
+		linkedin = "wian-stipp-204732152/"
+
+		copyright = [
+			"&copy; LSE SU Machine Learning Society 2019 |  Design: [HTML5 UP](//html5up.net)"
+		]
+
+
+	[params.about]
+		hide  = false
+		title = "LSE SU Machine Learning Society"
+		content = "The LSESU Machine Learning Society (ML@LSE) aims to increase the LSE community’s general understanding of machine learning techniques, its potential applications and implications for society. We also strive to collaborate with technical students to work on solving interesting problems with machine learning methods."
+
+	[params.activities]
+		hide = false
+		title = "Activities"
+
+		[[params.activities.activity]]
+			icon = "fa fa-laptop fa-stack-1x fa-inverse"
+			name = "Bootcamps"
+			description = "We aim to provide an accessible and inclusive introduction to Machine Learning through lectures and hands-on  Pythoncoding. We will cover a range of concepts, from Regression to Neural Networks. Don't worry - No prior programming knowledge is necessary. All materials are also available <a href = 'https://github.com/mlatlse/bootcamps-201819'>online</a>"
+
+		[[params.activities.activity]]
+			icon = "fa fa-tasks fa-stack-1x fa-inverse"
+			name = "Projects"
+			description = "Work with a team of motivated students to design Machine Learning solutions for industry projects and research projects. For 2018-2019, members received industry mentorship programme with Datatonic, and ultimately presented at <a href = 'https://mlatlse.kszk.eu/'>LSE SEDS 2019</a>"
+
+		[[params.activities.activity]]
+			icon = "fa fa-glass fa-stack-1x fa-inverse"
+			name = "Events"
+			description = "We have invited a wide range of speakers in the past, from industry and academia to discuss key topics in Machine Learning. Previous talks have featured speakers from Blackrock, KPMG, and the House of Lords.  You can stay up to date with our events on our <a href = 'https://www.facebook.com/pg/mlatlse/events/'>Facebook </a>"
+
+
+	[params.portfolio]
+		hide  = false
+		title = "Recent Events"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			image = "agm.jpg"
+			thumb = "agm.jpg"
+			title = "<a href = 'https://www.facebook.com/mlatlse/photos/a.145211739418382/354978955108325/'>2019 Annual General Meeting</a>"
+			description = "Annual General Meeting 2019"
+
+		[[params.portfolio.gallery]]
+			image = "bloomberg.jpg"
+			thumb = "bloomberg.jpg"
+			title = "<a href = 'https://www.facebook.com/mlatlse/posts/311532286119659'>ML at Bloomberg: Global Data</a>"
+			description = "Lorem ipsum dolor sit amet."
+
+		[[params.portfolio.gallery]]
+			image = "bigdatafromspace.jpg"
+			thumb = "bigdatafromspace.jpg"
+			title = "<a href = 'https://www.facebook.com/events/1968270489878875/'>Big Data From Space | Live Test by Rezatec </a>"
+			description = "Lorem ipsum dolor sit amet."
+
+		[[params.portfolio.gallery]]
+			image = "quantco.jpg"
+			thumb = "quantco.jpg"
+			title = "<a href = 'https://www.facebook.com/mlatlse/photos/a.155430095063213/299845727288315/'> QuantCo</a>"
+			description = "Lorem ipsum dolor sit amet."
+
+
+
+	[params.recentposts]
+		hide  = false
+		title = "Recent Content"
+
+	[params.contact]
+		hide  = false
+		title = "Get In Touch"
+		content = "If you have any questions about ML@LSE, or are interested in any sponsorship or partnership opportunities, we would be delighted if you contact us at any of the following:"
+
+		email = "machinelearning@lsesu.org"
+		facebook = "mlatlse"
+		linkedin = "wian-stipp-204732152/"
+
+		
+
+
+# Menu links that appear on the left sidebar
+[[menu.main]]
+	name = "Home"
+	url  = "/"
+	weight = 10
+
+[[menu.main]]
+	name = "Learn"
+	url  = "bootcamps/"
+	weight = 0
+
+[[menu.main]]
+	name = "Register (LSESU)"
+	url  = "https://www.lsesu.com/activities/societies/society/12940/"
+	weight = 0
+
+[[menu.main]]
+	name = "Projects"
+	url  = "projects/"
+	weight = 0
+
+[[menu.main]]
+	name = "Events"
+	url  = "events/"
+	weight = 0
+
+[[menu.temp]]
+	name = "Commitee"
+	url  = "committee"
+	weight = 0

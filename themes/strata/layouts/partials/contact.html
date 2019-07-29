@@ -1,0 +1,33 @@
+<!-- Three -->
+<section>
+	{{ if isset .Site.Params.contact "email" }}
+		{{ with .Site.Params.contact.title }}<h2>{{ . }}</h2>{{ end }}
+		{{ with .Site.Params.contact.content }}<p>{{ . | markdownify }}</p>{{ end }}
+	{{ end }}
+	<div class="row" id="contact-form">	
+		<div class="4u$ 12u$(small)">
+			<ul class="labeled-icons">
+				
+				
+				{{ if isset .Site.Params.contact "email" }}
+				<li>
+					<h3 class="icon fa-envelope-o"><span class="label"></span></h3>
+					<a href="mailto:{{ .Site.Params.contact.email }}">{{ .Site.Params.contact.email }}</a>
+				</li>
+				{{ end }}
+				{{ with .Site.Params.contact.facebook }}
+				<li>
+					<h3 class="icon fa-facebook"><span class="label"></span></h3>
+					<a href="//facebook.com/{{ . }}" target="_blank"><span class="label">Facebook</span></a>
+				</li>
+				{{ end }}
+				{{ with .Site.Params.contact.linkedin }}
+				<li>
+					<h3 class="icon fa-linkedin-square"><span class="label"></span></h3>
+					<a href="//linkedin.com/in/{{ . }}" target="_blank" ><span class="label">Linkedin (Wian Stipp)</span></a>
+				</li>
+				{{ end }}
+			</ul>
+		</div>
+	</div>
+</section>
